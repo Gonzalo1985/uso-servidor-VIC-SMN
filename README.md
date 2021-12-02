@@ -19,6 +19,8 @@ Entre algunos de los software de lenguaje de programación en VIC, se encuentra 
 
 Para llevar a cabo esto, cuando se instala la librería por línea de comando, se debe indicar a través del parámetro **lib**, donde instalar la librería. Un ejemplo para instalar el paquete 'lubridate', por línea de comando, sería el siguiente:
 
-> install.packages("lubridate", lib = "/data/R-libs/x86_64-pc-linux-gnu-library/3.4")
+```{r echo = FALSE}
+install.packages("lubridate", lib = "/data/R-libs/x86_64-pc-linux-gnu-library/3.4")
+```
 
 Notar que, el lugar que debe indicarse para instalar la librería o paquete es en una posición alojada en */data*.
