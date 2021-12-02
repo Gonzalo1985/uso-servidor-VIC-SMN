@@ -1,6 +1,8 @@
-### uso-servidor-VIC-SMN
+# uso-servidor-VIC-SMN
 
-## Buenas prácticas para el uso del Servidor VIC del Servicio Meteorológico Nacional (SMN)
+# Buenas prácticas para el uso del Servidor VIC del Servicio Meteorológico Nacional (SMN)
+
+## Almacenamiento en VIC
 El Servidor VIC es un procesador para la generación de productos y servicios de la Dirección de Servicios Sectoriales (DSS) del SMN. Se encuentra instalado en un entorno Linux, distribución Ubuntu. El mismo cuenta con dos lugares de almacenado principales: */home* y */data*, y dos secundarios: */ms-36* y */ms-270*.
 
 ### /home
@@ -11,3 +13,5 @@ En el */data* se almacenan archivos necesarios para ejecutar los scripts que se 
 
 ### /ms-36 y /ms-270
 Por otro lado, el Servidor VIC cuenta con acceso a otros lugares de almacenamiento más importantes, como son el */ms-36* y el */ms-270*. Respectivamente, en total, ambos tienen aproximadamente 36TB y 270TB de espacio. Por lo tanto, aquí también podrían almacenarse archivos más grandes. Dentro de */ms-36* se encuentra una carpeta */hidro* en donde también se guardan varios archivos shp para su utilización en gráficos o proyectos. Por lo tanto, además de archivos de datos y de parámetros, también podría utilizarse el */ms-36* como un lugar para almacenar archivos estáticos (contornos de provincias, cuencas, etc.). Inicialmente, el */ms-270* no es utilizado como un lugar de almacenamiento en la DSS.
+
+
