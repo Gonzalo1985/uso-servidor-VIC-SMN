@@ -26,11 +26,11 @@ install.packages("lubridate", lib = "/data/R-libs/x86_64-pc-linux-gnu-library/3.
 Notar que, el lugar que debe indicarse para instalar la librería o paquete es en una posición alojada en */data*.
 
 ## Levantar librería en R desde */data*
-En la sección anterior se abarcó el tema de como instalar una librería o paquete en R en una ruta específica. Ahora, para poder *levantar* o *abrir* una librería previamente instalada en la ruta específica, es cuestión de indicarle esta ruta a través del parámetro **lib.loc** de la función *library*.
+En la sección anterior se abarcó el tema de como instalar una librería o paquete en R en una ruta específica. Ahora, para poder *levantar* o *abrir* una librería previamente instalada en la ruta específica, es cuestión de indicarle esta ruta a través del parámetro **lib.loc** de la función library.
 
 Entonces, la forma de levantar la librería "lubridate" desde la ruta ubicada en */data*, sería de la siguiente manera:
 
 ```{r echo = FALSE}
 library("lubridate", lib.loc = "/data/R-libs/x86_64-pc-linux-gnu-library/3.4")
 ```
-Notar que algunos paquetes específicos de R a veces pueden ser levantados únicamente con la función *require*. Siempre es bueno intentar primero con *library* y si esto no funciona, probar con *require*.
+Notar que algunos paquetes específicos de R a veces pueden ser levantados únicamente con la función require. Siempre es bueno intentar primero con library y si esto no funciona, probar con require.
