@@ -51,7 +51,9 @@ Cada uno de estos usuarios cuenta con su */home* propio (como vimos en la secci�
 
 Cada usuario puede crear carpetas, archivos de texto, scripts de distintos lenguajes de programación, etc. Lo que hay que tener presente es que, por cada carpeta, archivo, script que genere un usuario en particular, se define un tipo y un nivel de permisos sobre ese objeto creado. Los **tipos de permisos** son 3: lectura (r, por su inicial en inglés, read), escritura (w, por su inicial en inglés, write) y ejecución (x por una de sus letras en inglés, execution). Mientras que, los **niveles de permisos** son 3 también: usuario propietario del objeto (UPO), usuario grupo del objeto (UGO) y usuarios otros (USOS). Por lo tanto, para cada objeto, es decir, para cada carpeta, archivo, script, etc. se tendrá definido los 3 **tipos de permisos** para los 3 **niveles de permisos**.
 
+## Sobre los usuarios de VIC y los permisos - Segunda parte
+A continuación se muestra una ubicación en VIC, específicamente en */home/gdiaz/01.SaladoBsAs* en donde se encuentran algunos archivos: 1 archivo csv, 1 archivo de proyecto R (.Rproj), 4 scripts de R (.R) y 3 scripts de bash (.bash) y en un recuadro rojo se indican los tipos y niveles de permisos para cada uno de esos archivos.
+
 ![Test Image 1](imagen-1.png)
 
-## Sobre los usuarios de VIC y los permisos - Segunda parte
 Luego continúa....
