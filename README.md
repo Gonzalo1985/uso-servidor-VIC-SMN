@@ -34,3 +34,15 @@ Entonces, la forma de levantar la librería "lubridate" desde la ruta ubicada en
 library("lubridate", lib.loc = "/data/R-libs/x86_64-pc-linux-gnu-library/3.4")
 ```
 Notar que algunos paquetes específicos de R a veces pueden ser levantados únicamente con la función require. Siempre es bueno intentar primero con library y si esto no funciona, probar con require.
+
+## Sobre los usuarios de VIC y los permisos
+En esta sección se va a intentar mostrar, de la mejor forma posible, como funciona el tema de usuarios y permisos dentro del Servidor VIC. Como se comentó en una sección anterior, en VIC *conviven* varios usuarios. Hasta el día de hoy, de todos los usuarios que existen, nos importan los siguientes:
+* agro       --> Usuario **agro**, general para los usuarios involucrados de ex Agrometeorología (ahora DSS-Agro)
+* cbolzi     --> Usuario de Cari Bolzi
+* ebontempi  --> Usuario de Euge Bontempi 
+* gdiaz      --> Usuario de Gonza Díaz
+* hidro      --> Usuario **agro**, general para los usuarios involucrados de ex Hidrometeorología (ahora DSS-Hidro)
+* lferreira  --> Usuario de Lore Ferreira
+* mvita      --> Usuario de Maxi Vita (externo al SMN)
+* sgimenez   --> Usuario de Santi Gimenez (CIM)
+* srossi     --> Usuario de Sol Rossi (ya quedó obsoleto, aunque creo que se seguí utilizando para algunos procesos)
