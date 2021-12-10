@@ -46,3 +46,7 @@ En esta sección se va a intentar mostrar, de la mejor forma posible, como funci
 * mvita      --> Usuario de Maxi Vita (externo al SMN)
 * sgimenez   --> Usuario de Santi Gimenez (CIM)
 * srossi     --> Usuario de Sol Rossi (ya quedó obsoleto, aunque creo que se seguí utilizando para algunos procesos)
+
+Cada uno de estos usuarios cuenta con su */home* propio (como vimos en la sección de */home*), es decir, existe un */home/ebontempi*, un */home/cbolzi*, etc. Este espacio del */home* de cada uno es el que debemos mantener limitado (por contar solo con 9.8GB de almacenamiento), como se mencionó en la sección de */home*.
+
+
