@@ -35,7 +35,7 @@ library("lubridate", lib.loc = "/data/R-libs/x86_64-pc-linux-gnu-library/3.4")
 ```
 Notar que algunos paquetes específicos de R a veces pueden ser levantados únicamente con la función require. Siempre es bueno intentar primero con library y si esto no funciona, probar con require.
 
-## Sobre los usuarios de VIC y los permisos
+## Sobre los usuarios de VIC y los permisos - Primera parte
 En esta sección se va a intentar mostrar, de la mejor forma posible, como funciona el tema de usuarios y permisos dentro del Servidor VIC. Como se comentó en una sección anterior, en VIC *conviven* varios usuarios. Hasta el día de hoy, de todos los usuarios que existen, nos importan los siguientes:
 * agro       --> Usuario **agro**, general para los usuarios involucrados de ex Agrometeorología (ahora DSS-Agro)
 * cbolzi     --> Usuario de Cari Bolzi
@@ -51,3 +51,5 @@ Cada uno de estos usuarios cuenta con su */home* propio (como vimos en la secci�
 
 Cada usuario puede crear carpetas, archivos de texto, scripts de distintos lenguajes de programación, etc. Lo que hay que tener presente es que, por cada carpeta, archivo, script que genere un usuario en particular, se define un tipo y un nivel de permisos sobre ese objeto creado. Los **tipos de permisos** son 3: lectura (r, por su inicial en inglés, read), escritura (w, por su inicial en inglés, write) y ejecución (x por una de sus letras en inglés, execution). Mientras que, los **niveles de permisos** son 3 también: usuario propietario del objeto (UPO), usuario grupo del objeto (UGO) y usuarios otros (USOS). Por lo tanto, para cada objeto, es decir, para cada carpeta, archivo, script, etc. se tendrá definido los 3 **tipos de permisos** para los 3 **niveles de permisos**.
 
+## Sobre los usuarios de VIC y los permisos - Segunda parte
+Luego continúa...
