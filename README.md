@@ -63,7 +63,7 @@ Tomemos de ejemplo de la imagen el archivo *03_Genera-control-VIC-SaladoBsAs.bas
 Para finalizar esta sección, los usuarios que pertenecen a un mismo grupo se convierten en UGO. Es decir, los usuarios **hidro** y **agro** de VIC podrían pertenecer a un mismo grupo (llamémoslo grupo *sc*) y por lo tanto, solo basta con darles **tipos de permisos** para nivel UGO y no debería haber problema en que tanto **hidro** y **agro** hagan las modificaciones indicadas en los archivos específicos.
 
 ## Sobre los usuarios de VIC y los permisos - Tercera parte
-En esta sección indicaremos como saber a que grupo pertenece cada usuario. Simplemente, ejecutando *groups {nombre de usuario}* desde una consola de Linux, podrán saber a que grupo pertenece ese usuario y cual es el orden de prioridad de los mismos. **IMPORTANTE: Tener en cuenta que existe una diferencia entre usuario y grupo, a pesar de que se llamen igual. Tener en cuenta este comentario para el ejemplo que sigue a continuación**. 
+En esta sección indicaremos como saber a que grupo pertenece cada usuario. Simplemente, ejecutando *groups {nombre de usuario}* desde una consola de Linux, podrán saber a que grupo pertenece ese usuario y cual es el orden de prioridad de los mismos. **IMPORTANTE: Tener en cuenta que existe una diferencia entre usuario y grupo, a pesar de que se llamen igual. Considerar esto para el ejemplo que sigue a continuación**. 
  
 ```{bash echo = FALSE}
 gdiaz@vic:~$ groups ebontempi
