@@ -67,3 +67,9 @@ En esta sección indicaremos como saber a que grupo pertenece cada usuario. Simp
   
 ![Test Image 2](imagen-2.PNG)
  
+```{bash echo = FALSE}
+groups ebontempi
+  ebontempi : ebontempi hidro sc
+```
+  
+  
