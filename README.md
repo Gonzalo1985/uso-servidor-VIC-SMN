@@ -64,8 +64,6 @@ Para finalizar esta sección, los usuarios que pertenecen a un mismo grupo se co
 
 ## Sobre los usuarios de VIC y los permisos - Tercera parte
 En esta sección indicaremos como saber a que grupo pertenece cada usuario. Simplemente, ejecutando *groups <nombre de usuario>* desde una consola de Linux, podrán saber a que grupo pertenece ese usuario y cual es el orden de prioridad de los mismos.
-  
-![Test Image 2](imagen-2.PNG)
  
 ```{bash echo = FALSE}
 gdiaz@vic:~$ groups ebontempi
