@@ -56,7 +56,7 @@ A continuación se muestra una ubicación en VIC, específicamente en */home/gdi
 
 ![Test Image 1](imagen-1.png)
 
-Es decir, la primera posición define el tipo de archivo, suele aparecer una **d** para indicar que es un directorio/carpeta si no aparece un **-**. Luego, las siguientes tres posiciones indican los **tipos de permisos** para el UPO, las siguientes tres posiciones son los **tipos de permisos** para el UGO y por último, las últimas tres son para el USOS. Además, los nombres que aparecen luego del **1**, en el caso de la figura son *gdiaz* y *sc*, indican quien es el UPO y el UGO del archivo, respectivamente.
+Es decir, la primera posición define el tipo de archivo, suele aparecer una **d** para indicar que es un directorio/carpeta si no aparece un **-**. Luego, las siguientes tres posiciones indican los **tipos de permisos** para el UPO, las siguientes tres posiciones son los **tipos de permisos** para el UGO y por último, las últimas tres son para el USOS. Además, los nombres que aparecen luego del **1**, en esta oportunidad son *gdiaz* y *sc*, indican quien es el UPO y el UGO del archivo, respectivamente.
 
 Tomemos de ejemplo de la imagen el archivo *03_Genera-control-VIC-SaladoBsAs.bash*, este es un archivo y no una carpeta ya que no cuenta con el indicativo **d** adelante. Luego, aparecen **rwx** que indica que el UPO tiene tanto permisos de lectura (r) como de escritura (w) y ejecución (x). Finalmente, UGO y USOS muestran que solo tienen permisos de lectura y ejecución (**r-x**, por duplicado).
 
