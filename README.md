@@ -41,10 +41,10 @@ En esta sección se va a intentar mostrar, de la mejor forma posible, como funci
 * cbolzi     --> Usuario de Cari Bolzi
 * ebontempi  --> Usuario de Euge Bontempi 
 * gdiaz      --> Usuario de Gonza Díaz
-* hidro      --> Usuario **agro**, general para los usuarios involucrados de ex Hidrometeorología (ahora DSS-Hidro)
+* hidro      --> Usuario **hidro**, general para los usuarios involucrados de ex Hidrometeorología (ahora DSS-Hidro)
 * lferreira  --> Usuario de Lore Ferreira
 * mvita      --> Usuario de Maxi Vita (externo al SMN)
-* sgimenez   --> Usuario de Santi Gimenez (CIM)
+* sgimenez   --> Usuario de Santi Gimenez (ex integrante del CIM, ahora externo al SMN, creo que no se utiliza para correr ningún proceso)
 * srossi     --> Usuario de Sol Rossi (ya quedó obsoleto, aunque creo que se sigue utilizando para algunos procesos)
 
 Cada uno de estos usuarios cuenta con su */home* propio (como vimos en la sección de */home*), es decir, existe un */home/ebontempi*, un */home/cbolzi*, etc. Este espacio del */home* de cada uno es el que debemos mantener limitado (por contar solo con 9.8GB de almacenamiento), como se mencionó en la sección de */home*.
@@ -56,4 +56,4 @@ A continuación se muestra una ubicación en VIC, específicamente en */home/gdi
 
 ![Test Image 1](imagen-1.png)
 
-Luego continúa....
+Es decir, la primera posición define el tipo de archivo, suele aparecer una **d** para indicar que es un directorio/carpeta si no aparece un **-**. Luego, las siguientes tres posiciones indican los **tipos de permisos** para UPO, las siguientes tres posiciones son los **tipos de permisos** para UGO y por último, las últimas tres son para USOS.
