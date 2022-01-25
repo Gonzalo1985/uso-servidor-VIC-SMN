@@ -61,3 +61,8 @@ Es decir, la primera posición define el tipo de archivo, suele aparecer una **d
 Tomemos de ejemplo de la imagen el archivo *03_Genera-control-VIC-SaladoBsAs.bash*, este es un archivo y no una carpeta ya que no cuenta con el indicativo **d** adelante. Luego, aparecen **rwx** que indica que el UPO tiene tanto permisos de lectura (r) como de escritura (w) y ejecución (x). Finalmente, UGO y USOS muestran que solo tienen permisos de lectura y ejecución (**r-x**, por duplicado).
 
 Para finalizar esta sección, los usuarios que pertenecen a un mismo grupo se convierten en UGO. Es decir, los usuarios **hidro** y **agro** de VIC podrían pertenecer a un mismo grupo (llamémoslo grupo *sc*) y por lo tanto, solo basta con darles **tipos de permisos** para nivel UGO y no debería haber problema en que tanto **hidro** y **agro** hagan las modificaciones indicadas en los archivos específicos.
+
+## Sobre los usuarios de VIC y los permisos - Tercera parte
+En esta sección indicaremos como saber a que grupo pertenece cada usuario. Simplemente, ejecutando *groups <nombre de usuario>* desde una consola de Linux, podrán saber a que grupo pertenece ese usuario y cual es el orden de prioridad de los mismos.
+  
+![Test Image 1](imagen-2.png)
