@@ -72,8 +72,7 @@ gdiaz@vic:~$ groups ebontempi
 gdiaz@vic:~$ groups cbolzi
   cbolzi : cbolzi
   
-gdiaz@vic:~$ groups gdiaz
+gdiaz@vic:~$ groups hidro
   gdiaz : sc gdiaz hidro
 ```
-  
-  
+En este caso, el usuario **ebontempi** pertenece a un grupo llamado *ebontempi*, a otro llamado *hidro* y otro *sc*, este último es el mismo que veíamos en la sección anterior. Sin embargo, el usuario **ebontempi** no tiene como prioridad, es decir, en primera posición, al grupo *sc*. Por lo tanto, cada vez que cree un archivo, el UGO será *ebontempi* y no *sc*. En el caso del usuario **cbolzi**, solo existe un grupo al que pertenece este usuario, y ese es *cbolzi*. Por lo tanto, todo archivo creado por este usuario también generará al UGO como *cbolzi*. Por último, el usuario **hidro** tiene como grupos definidos a *sc*, *gdiaz* e *hidro*, pero a diferencia del usuario **ebontempi**, este usuario tiene en primera posición a *sc*, es por eso que cada vez que cree un archivo el UGO será *sc*. Esto puede notarse en el ejemplo de la figura de la sección anterior.  
