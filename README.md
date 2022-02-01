@@ -92,7 +92,7 @@ Indicando que el archivo fue creado con permiso de lectura (r) y escritura (w) p
 ```{bash echo = FALSE}
 -rw-r--r--  1 clima mrugna     0 Feb  1 16:31 este_es_un_archivo.txt
 ```
-Donde podemos notar que tanto UPO como UGO no son realmente los que deberían ser. Estamos entonces, ante una incompatibilidad de usuarios. Lo que hay que tener en cuenta, que cuando esto suceda, no hay que creer en los nombres indicados que aparecen listados. En este caso, hay que tener en consideración que el archivo en realidad fue creado desde VIC con el usuario **gdiaz** y por lo tanto, conectarse desde ahí.
+Donde podemos notar que tanto UPO como UGO no son realmente los que deberían ser. Estamos entonces, ante una incompatibilidad de usuarios. Lo que hay que tener en cuenta cuando esto sucede es, no creer en los nombres indicados que aparecen listados. En este caso, hay que considerar que el archivo en realidad fue creado desde VIC con el usuario **gdiaz** y por lo tanto, conectarse desde ahí.
 
 Por último, hay formas de modificar los **tipos de permisos**, es decir, uno puede agregarle permisos de escritura a UGO y USOS o quitar permisos, etc. Esto supera la finalidad de esta sección, por lo tanto, no vamos a hablar de ello.
 
