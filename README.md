@@ -80,11 +80,20 @@ En este caso, el usuario **ebontempi** pertenece a un grupo llamado *ebontempi*,
 ## Incompatibilidades de usuarios entre servidores
 Como última sección de este documento, se agrega un apartado que explica las incompatibilidades de usuarios que existen entre los distintos servidores dentro del SMN. Cuando se hable de incompatibilidad de usuario, nos estaremos refiriendo a que, por ejemplo, el usuario **agro** de VIC no será lo mismo que el usuario **agro** del *ms-36*. Vale aclarar, que aunque anteriormente dijimos que el *ms-36* no es mas que un lugar para almacenamiento de información, hay que considerar que también es un servidor. Por lo tanto, así como existen algunos usuarios creados para VIC, también existen usuarios creados en el *ms-36*.
 
-La incompatibilidad de usuario surge cuando queremos, por ejemplo, leer un archivo ya creado o escribir en una carpeta específica desde un usuario, pero este no tiene los permisos indicados, ya que el archivo o carpeta fueron creados por el mismo usuario pero desde otro servidor.
+La incompatibilidad de usuarios surge cuando queremos, por ejemplo, leer un archivo ya creado o escribir en una carpeta específica desde un usuario, pero este no tiene los permisos indicados, ya que el archivo o carpeta fueron creados por el mismo usuario pero desde otro servidor.
 
-Supongamos que desde el usuario **gdiaz** de VIC creamos un archivo llamado *este_es_un_archivo.txt*, si listamos el directorio en donde se encuentra este archivo desde el usuario **gdiaz** de VIC tendremos la siguiente información:
+Supongamos que desde el usuario **gdiaz** de VIC creamos un archivo llamado *este_es_un_archivo.txt* y los posicionamos dentro de una carpeta del *ms-36*, si listamos el directorio en donde se encuentra este archivo desde el usuario **gdiaz** de VIC, tendremos la siguiente información:
 
 ```{bash echo = FALSE}
--rw-r--r--  1 gdiaz sc     0 Feb  1 16:26 este_es_un_archivo.txt
+-rw-r--r--  1 gdiaz sc     0 Feb  1 16:31 este_es_un_archivo.txt
 ```
+Indicando que el archivo fue creado con permiso de lectura (r) y escritura (w) para UPO (en este caso **gdiaz**) y con permisos solo de lectura para UGO y USOS, siendo UGO el grupo *sc*. Luego, se indica el tamaño del archivo, que como se encuentra vacío vale 0, la fecha y hora de creación del mismo y por último el nombre del archivo. Ahora, si intentamos abrir y escribir sobre este archivo, conectado desde el usuario **hidro** del *ms-36*, recibiremos un mensaje de que es un archivo de solo lectura, y efectivamente lo es, por que el usuario **hidro** del *ms-36* no es el creador del archivo y los permisos están habilitados solo para lectura para UGO y USOS. Hasta acá todo es esperable. Sin embargo, al listar el directorio donde se encuentra el archivo, conectado desde el usuario **hidro** del *ms-36* recibiremos el siguiente resultado:
 
+```{bash echo = FALSE}
+-rw-r--r--  1 clima mrugna     0 Feb  1 16:31 este_es_un_archivo.txt
+```
+Donde podemos notar que tanto UPO como UGO no son realmente los que deberían ser. Estamos entonces, ante una incompatibilidad de usuarios. Lo que hay que tener en cuenta, que cuando esto suceda, no hay que creer en los nombres indicados que aparecen listados. En este caso, hay que tener en consideración que el archivo en realidad fue creado desde VIC con el usuario **gdiaz** y por lo tanto, conectarse desde ahí.
+
+Por último, hay formas de modificar los **tipos de permisos**, es decir, uno puede agregarle permisos de escritura a UGO y USOS o quitar permisos, etc. Esto supera la finalidad de esta sección, por lo tanto, no vamos a hablar de ello.
+
+Contacto ante cualquier consulta: *Gonzalo Díaz* - **gdiaz@smn.gov.ar**
