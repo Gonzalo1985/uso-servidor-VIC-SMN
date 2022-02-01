@@ -96,4 +96,5 @@ Donde podemos notar que tanto UPO como UGO no son realmente los que deberían se
 
 Por último, hay formas de modificar los **tipos de permisos**, es decir, uno puede agregarle permisos de escritura a UGO y USOS o quitar permisos, etc. Esto supera la finalidad de esta sección, por lo tanto, no vamos a hablar de ello.
 
+
 Contacto ante cualquier consulta: *Gonzalo Díaz* - **gdiaz@smn.gov.ar**
