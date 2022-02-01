@@ -78,4 +78,13 @@ gdiaz@vic:~$ groups gdiaz
 En este caso, el usuario **ebontempi** pertenece a un grupo llamado *ebontempi*, a otro llamado *hidro* y otro *sc*, este último es el mismo que veíamos en la sección anterior. Sin embargo, el usuario **ebontempi** no tiene como prioridad, es decir, en primera posición, al grupo *sc*. Por lo tanto, cada vez que cree un archivo, el UGO será *ebontempi* y no *sc*. En el caso del usuario **cbolzi**, solo existe un grupo al que pertenece este usuario, y ese es *cbolzi*. Por lo tanto, todo archivo creado por este usuario, también generará al UGO como *cbolzi*. Por último, el usuario **gdiaz** tiene como grupos definidos a *sc*, *gdiaz* e *hidro*, pero a diferencia del usuario **ebontempi**, este usuario tiene en primera posición a *sc*, es por eso que cada vez que cree un archivo el UGO será *sc*. Esto puede notarse en el ejemplo de la figura de la sección anterior.
 
 ## Incompatibilidades de usuarios entre servidores
-Luego continúa...
+Como última sección de este documento, se agrega un apartado que explica las incompatibilidades de usuarios que existen entre los distintos servidores dentro del SMN. Cuando se hable de incompatibilidad de usuario, nos estaremos refiriendo a que, por ejemplo, el usuario **agro** de VIC no será lo mismo que el usuario **agro** del *ms-36*. Vale aclarar, que aunque anteriormente dijimos que el *ms-36* no es mas que un lugar para almacenamiento de información, hay que considerar que también es un servidor. Por lo tanto, así como existen algunos usuarios creados para VIC, también existen usuarios creados en el *ms-36*.
+
+La incompatibilidad de usuario surge cuando queremos, por ejemplo, leer un archivo ya creado o escribir en una carpeta específica desde un usuario, pero este no tiene los permisos indicados, ya que el archivo o carpeta fueron creados por el mismo usuario pero desde otro servidor.
+
+Supongamos que desde el usuario **gdiaz** de VIC creamos un archivo llamado *este_es_un_archivo.txt*, si listamos el directorio en donde se encuentra este archivo desde el usuario **gdiaz** de VIC tendremos la siguiente información:
+
+```{bash echo = FALSE}
+-rw-r--r--  1 gdiaz sc     0 Feb  1 16:26 este_es_un_archivo.txt
+```
+
